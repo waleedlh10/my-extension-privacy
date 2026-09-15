@@ -56,7 +56,7 @@
       <h1>Privacy Policy</h1>
       <p class="meta">
         Flash publish by R&amp;S telecom<br />
-        Last updated: 11 September 2026
+        Last updated: 15 September 2026
       </p>
 
       <p>
@@ -80,19 +80,22 @@
           descriptions, and related fields from Atlassian or the publish flow).
         </li>
         <li>
-          <strong>Email address</strong> you enter for one-time password (OTP)
-          verification emails.
-        </li>
-        <li>
           <strong>API credentials you configure</strong> (OpenRouter API keys,
-          optional EmailJS overrides, optional Turnover JobConnect token),
-          stored locally in Chrome extension storage.
+          optional EmailJS credentials if email verification is enabled,
+          optional Turnover JobConnect token), stored locally in Chrome
+          extension storage.
         </li>
         <li>
           <strong>Publish session state</strong> needed to complete the workflow
           (selected platforms, draft text, process status).
         </li>
       </ul>
+      <p>
+        Email one-time password (OTP) verification is currently
+        <strong>disabled</strong> in the Extension. When it is disabled, the
+        Extension does not collect email addresses for verification and does not
+        send OTP emails.
+      </p>
       <p>
         The Extension does not sell personal data and does not use it for
         advertising.
@@ -106,13 +109,17 @@
           extraction when you run those features (requires your API key).
         </li>
         <li>
-          <strong>EmailJS</strong> — your email address and OTP content to
-          deliver verification emails.
+          <strong>EmailJS</strong> — only if email verification is re-enabled
+          and you configure EmailJS credentials in the Extension settings. In
+          that case, your email address and OTP content are sent to EmailJS to
+          deliver verification emails. The Extension does not ship built-in
+          EmailJS credentials; you must supply your own.
         </li>
         <li>
           <strong>Apec, LinkedIn, Turnover-IT, and Atlassian</strong> — when you
           explicitly run publish or extraction flows on those sites while signed
-          into your own accounts.
+          into your own accounts. Publish automation uses your existing browser
+          sessions on those sites; it does not collect your board passwords.
         </li>
       </ul>
       <p>
@@ -132,22 +139,27 @@
       <h2>5. Limited use</h2>
       <p>
         Data is used only to provide the Extension’s flash-publish features
-        (anonymize, extract, verify, and publish). It is not used to build
-        unrelated user profiles and is not sold to third parties.
+        (anonymize, extract, and publish). It is not used to build unrelated
+        user profiles and is not sold to third parties.
+      </p>
+      <p>
+        The use of information received from Google APIs will adhere to the
+        Chrome Web Store User Data Policy, including the Limited Use
+        requirements.
       </p>
 
       <h2>6. Your choices</h2>
       <ul>
         <li>Do not run publish/anonymize flows if you do not want content sent to OpenRouter or job boards.</li>
+        <li>Review LinkedIn submit and checkout options before confirming publish; checkout steps may involve LinkedIn fees.</li>
         <li>Remove API keys from the Extension popup / settings when no longer needed.</li>
         <li>Uninstall the Extension to stop all processing and remove local extension storage associated with it.</li>
       </ul>
 
       <h2>7. Contact</h2>
       <p>
-        For privacy questions about this Extension, contact R&amp;S telecom
-        through your usual internal support channel, or replace this paragraph
-        with your public support email before hosting this page.
+        For privacy questions about this Extension, contact R&amp;S telecom at
+        <a href="mailto:contact@rs-telecom.fr">contact@rs-telecom.fr</a>.
       </p>
 
       <h2>8. Changes</h2>
